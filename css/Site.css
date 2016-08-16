@@ -1,0 +1,139 @@
+﻿body {
+    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+    background-color: #f7971c;
+}
+
+.vertical-align {
+  display: flex;
+}
+
+.vertical-align > .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-inverse .navbar-toggle {
+    color: #9d9d9d;
+    border-color: #9d9d9d;
+}
+
+.navbar-brand.logo {
+    padding: 10px 10px;
+}
+
+.navbar-brand>img {
+    max-height: 31px;
+}
+
+@media (max-width: 767px) {
+    .navbar-brand>img {
+        display: none;
+    }
+}
+
+.hero {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    background: url("../images/hero.jpg") center center / cover no-repeat;
+}
+
+.hero-text {
+    position: relative;
+    padding-top: 12%;
+    padding-bottom: 8%;
+}
+
+.hero-text h1 {
+    color: #fff;
+    font-size: 5em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
+@media (max-width: 500px) {
+    .hero-text h1 {
+        font-size: 3em;
+    }
+}
+
+.hero-text h3 {
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.icon {
+    text-align: center;
+}
+
+.services {
+    padding-bottom: 5px;
+    border-top: solid 1px #eee;
+}
+
+.btn-default:hover, .btn-default:focus {
+    background-color: #f7971c;
+    border-color: #C46400;
+}
+
+.btn-default:hover:active, .btn-default:focus:active {
+    background-color: #DE7E03;
+    border-color: #DE7E03;
+}
+
+.features {
+    background-color: #f7f7f7;
+    padding-bottom: 5px;
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features h3 {
+    padding-bottom: 5px;
+    border-bottom: solid 1px #f7971c;
+}
+
+.features-description {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.feature {
+    background-color: #fff;
+    border: solid 1px #eee;
+    padding: 10px 20px;
+    margin-bottom: 20px
+}
+
+.footer {
+    color: #fff;
+    background: #272727;
+    padding-top: 20px;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social .fa {
+    color: white;
+}
