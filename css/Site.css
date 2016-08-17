@@ -81,9 +81,48 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.services {
+.links {
     padding-bottom: 5px;
     border-top: solid 1px #eee;
+}
+
+.links-header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.links-header h2 {
+    max-height: 33px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.links h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #f7971c;
+}
+
+.link {
+    border: solid 1px #eee;
+    padding: 20px 30px;
+    margin-bottom: 20px
+}
+
+.links a {
+    color: #333;
+}
+
+.links a:hover, a:focus {
+    text-decoration: none;
+}
+
+.link:hover, .link:focus {
+    box-shadow: 2px 2px 10px #eee;
+}
+
+ .link:hover:active, .link:focus:active {
+     text-decoration: none;
 }
 
 .btn-default:hover, .btn-default:focus {
