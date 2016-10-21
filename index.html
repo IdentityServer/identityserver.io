@@ -28,51 +28,24 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <!--<a class="navbar-brand logo" href="/">
-                    <img src="/images/identityserver-logo-header.png" class="img-responsive" alt="brand" />
-                </a>-->
-                <a class="navbar-brand" href="/">
-                    IdentityServer
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#links">Links</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <div class="container-fluid hero" id="hero">
         <div class="row">
             <div class="col-lg-12 hero-text">
-                <h1 itemprop="name">IdentityServer</h1>
-                <h3>The Open Source OpenID Connect and OAuth 2.0 framework for .NET</h3>
+                <h1 itemprop="name"><a href="index.html">IdentityServer</a></h1>
+                <h3>Open Source OpenID Connect and OAuth 2.0 framework for .NET</h3>
             </div>
         </div>
     </div>
     <div class="features" id="features">
         <div class="container">
-            <h2>Features</h2>
-            <p class="features-description">
-                Using IdentityServer as your identity provider provides many benefits out of the box. This, combined with it&#39;s high degree
-                of customizability, makes it the leading OpenID Connect Identity Provider available.
-            </p>
             <div class="row">
                 <div class="col-md-6 col-xs-12">
                     <div class="feature">
                         <div class="row vertical-align">
                             <div class="col-xs-9">
-                                <h3>Open Source Identity Provider</h3>
-                                <p>IdentityServer is completely open source with no complex agreements to sign or subscriptions
-                                    to pay. IdentityServer is developed to the OpenID Connect specification ensuring platform
-                                    agnostic integration with no implementation specific requirements.</p>
+                                <h3>Authentication as a Service</h3>
+                                <p>Single sign-on (and out) over multiple application types, allowing for centralized login logic and workflow
+                                     for all of your applications (web, native, mobile, services).</p>
                             </div>
                             <div class="col-xs-3 icon">
                                 <i class="fa fa-openid fa-5x"></i>
@@ -84,13 +57,11 @@
                     <div class="feature">
                         <div class="row vertical-align">
                             <div class="col-xs-9">
-                                <h3>Single Sign On</h3>
-                                <p>IdentityServer comes with Single Sign On (SSO) out of the box. This is not only a user experience
-                                    boon, with users only needing to log in to your brand's identity provider, but it also
-                                    means that you only need to implement your authentication logic once.</p>
+                                <h3>Access Control for APIs</h3>
+                                <p>Issue access tokens for APIs for various types of clients, e.g. server to server, web applications, SPAs and native/mobile apps.</p>
                             </div>
                             <div class="col-xs-3 icon">
-                                <i class="fa fa-sign-in fa-5x"></i>
+                                <i class="fa fa-lock fa-5x"></i>
                             </div>
                         </div>
                     </div>
@@ -101,13 +72,11 @@
                     <div class="feature">
                         <div class="row vertical-align">
                             <div class="col-xs-9">
-                                <h3>Security for your APIs</h3>
-                                <p>Implementing both OpenID Connect and OAuth, IdentityServer can provide security for your
-                                    sensitive internal resources, delegating and scoping access based on the requesting user
-                                    or application.</p>
+                                <h3>Federation Gateway</h3>
+                                <p>Support for external identity providers like (Azure) Active Directory, Google, Facebook etc. This shields your applications from the details of how to connect to these external providers.</p>
                             </div>
                             <div class="col-xs-3 icon">
-                                <i class="fa fa-lock fa-5x"></i>
+                                <i class="fa fa-sign-in fa-5x"></i>
                             </div>
                         </div>
                     </div>
@@ -116,12 +85,11 @@
                     <div class="feature">
                         <div class="row vertical-align">
                             <div class="col-xs-9">
-                                <h3>Mobile</h3>
-                                <p>IdentityServer is fully compatible with all mobile devices, with existing libraries available
-                                    that make Xamarin integration simple, and offer support for Proof-of-Possession tokens.</p>
+                                <h3>Focus on Customization</h3>
+                                <p>The most important part - many aspect of IdentityServer can be customized to fit your needs. Since IdentityServer is a framework and not a boxed product or a SaaS, you can write code to adapt the system the way it makes sense for your scenarios.</p>
                             </div>
                             <div class="col-xs-3 icon">
-                                <i class="fa fa-mobile fa-5x"></i>
+                                <i class="fa fa-gears fa-5x"></i>
                             </div>
                         </div>
                     </div>
@@ -131,25 +99,8 @@
     </div>
     <div class="links" id="links">
         <div class="container">
-            <h2>Links</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <a title="IdentityServer Commercial Support" href="https://www.identityserver.com/" target="_blank">
-                        <div class="link">
-                            <div class="row">
-                                <div class="col-xs-12 icon">
-                                    <i class="fa fa-phone fa-5x"></i>
-                                </div>
-                                <div class="col-xs-12">
-                                    <h3>Support</h3>
-                                    <p>Commercial support for IdentityServer is now available. 
-                                        To find out more or get in contact, check out our commercial support site.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
+            <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <a title="IdentityServer GitHub" href="https://github.com/IdentityServer" target="_blank">
                         <div class="link">
@@ -182,7 +133,73 @@
                         </div>
                     </a>
                 </div>
+                <div class="col-md-4 col-sm-12">
+                    <a title="IdentityServer Training" href="training/index.html">
+                        <div class="link">
+                            <div class="row">
+                                <div class="col-xs-12 icon">
+                                    <i class="fa fa-mortar-board fa-5x"></i>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h3>Training</h3>
+                                    <p>We provide both onsite and open enrollment training for OpenID Connect, OAuth2, ASP.NET Security and how to use them all with IdentityServer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <a title="IdentityServer Consulting" href="mailto:identity@leastprivilege.com?subject=consulting request">
+                        <div class="link">
+                            <div class="row">
+                                <div class="col-xs-12 icon">
+                                    <i class="fa fa-comments-o fa-5x"></i>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h3>Consulting</h3>
+                                    <p>We offer remote and onsite consulting for identity and access control for modern applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a title="IdentityServer North American Support" href="mailto:identityserversupport@solliance.net?subject=production support">
+                        <div class="link">
+                            <div class="row">
+                                <div class="col-xs-12 icon">
+                                    <i class="fa fa-phone fa-5x"></i>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h3>North American Support</h3>
+                                    <p>Commercial support for IdentityServer within North America is now available. 
+                                        To find out more or get in contact, check out our commercial support site.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a title="IdentityServer European Support" href="https://www.identityserver.com/" target="_blank">
+                        <div class="link">
+                            <div class="row">
+                                <div class="col-xs-12 icon">
+                                    <i class="fa fa-phone fa-5x"></i>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h3>European Support</h3>
+                                    <p>Commercial support for IdentityServer within Europe is now available. 
+                                        To find out more or get in contact, check out our commercial support site.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="footer">

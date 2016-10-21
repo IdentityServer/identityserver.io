@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -41,8 +41,8 @@ nav {
 }
 
 .hero {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #f0f0f0;
     text-align: center;
     background: url("../images/hero.jpg") center center / cover no-repeat;
@@ -73,6 +73,11 @@ nav {
     font-weight: 600;
 }
 
+.hero a {
+    text-decoration: none;
+    color:inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
@@ -83,6 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .links {
     padding-bottom: 5px;
+    padding-top: 25px;
     border-top: solid 1px #eee;
 }
 
@@ -137,6 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .features {
     background-color: #f7f7f7;
+    padding-top: 25px;
     padding-bottom: 5px;
     border-top: solid 1px #eee;
     border-bottom: solid 1px #eee;
@@ -160,7 +167,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     border: solid 1px #eee;
     padding: 10px 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    height: 200px;
 }
 
 .footer {
@@ -176,3 +184,33 @@ h1, h2, h3, h4, h5, h6 {
 .footer-social .fa {
     color: white;
 }
+
+.agenda li {
+    padding:5px;
+    margin-left: 20px;
+}
+.agenda h3 {
+    width:300px;
+    text-align: center;
+}
+.dates dl {
+    text-align: center;
+    font-size: 120%;
+}
+
+.dates dt {
+    display: inline-block;
+    width: 33%;
+    text-align: right;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.dates dt::after {
+    content:':';
+}
+.dates dd {
+    text-align: left;
+    display: inline-block;
+    width: 65%;
+}
+
