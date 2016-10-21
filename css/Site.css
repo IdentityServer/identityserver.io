@@ -193,24 +193,11 @@ h1, h2, h3, h4, h5, h6 {
     width:300px;
     text-align: center;
 }
-.dates dl {
-    text-align: center;
-    font-size: 120%;
-}
 
-.dates dt {
-    display: inline-block;
-    width: 33%;
-    text-align: right;
+.dates .date {
     font-weight: bold;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
-.dates dt::after {
-    content:':';
+.dates .info {
+    margin-bottom: 10px;
 }
-.dates dd {
-    text-align: left;
-    display: inline-block;
-    width: 65%;
-}
-
