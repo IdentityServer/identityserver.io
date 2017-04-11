@@ -201,3 +201,8 @@ h1, h2, h3, h4, h5, h6 {
 .dates .info {
     margin-bottom: 10px;
 }
+
+.labs h3 {
+    text-align: center;
+    height:60px;
+}

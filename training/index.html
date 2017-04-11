@@ -115,11 +115,12 @@
 
             <div class="row agenda">
                 <h2>Content</h2>
+                <div class="col-md-6 col-md-push-3">
+                    <p>The full three day version of the class covers the following content and six hands-on labs. You can also customize the content for one or two day versions.</p>
+                </div>
+            </div>
 
-<!--                
-<p>The full three day version of the class covers the following content and six hands-on labs. You can also customize the content for one or two day versions.</p>
--->
-
+            <div class="row agenda">
                 <div class="col-md-4">
                     <h3>Foundation &amp; Authentication</h3>
                     <ul>
@@ -175,10 +176,16 @@
                     </ul>
                 </div>
             </div>
-<!--
-            <div class="row agenda">
+
+            <div class="row labs">
                 <h2>Hands-on Labs</h2>
+                <div class="col-md-6 col-md-push-3">
+                    <p>The hands-on labs each take one to two hours and include step-by-step instructions and reference solutions.</p>
+                </div>
                 
+            </div>
+
+            <div class="row labs">
                 <div class="col-md-4">
                     <h3>ASP.NET Core Authentication and Authorization</h3>
                     <p>In this lab you will add cookie-based authentication to the movie review website using the cookie authentication middleware and claims-based identity. Once users are authenticated, you will then also implement policy-based and resource-based authorization using the ASP.NET Core authorization framework.</p>
@@ -193,7 +200,9 @@
                     <h3>Federation Gateway</h3>
                     <p>In this lab you will consolidate all external authentication into a single authentication gateway. IdentityServer will act as this gateway. You will also implement single sign-out which allows the user to sign-out of both the movie web app, and IdentityServer.</p>
                 </div>
+            </div>
 
+            <div class="row labs">
                 <div class="col-md-4">
                     <h3>Web APIs</h3>
                     <p>In this lab the movie review logic has been split into two projects: one for the back-end movie review logic as a web API, and one for the front-end movie review UI as a web application. The web API will require access tokens to use its functionality, and the movie review web app will obtain access tokens and pass them to the web API. IdentityServer will be used to issue this access token to the movie review web application.</p>
@@ -208,19 +217,18 @@
                     <h3>JavaScript client applications</h3>
                     <p>In this lab the movie review application has been rewritten as a pure JavaScript-based application. It won't have as much functionality as the previous labs, but it will suffice to show how to obtain an access token and call a web API.</p>
                 </div>
-                
             </div>
 
         </div>
     </div>
--->
+
     
 
     <div class="footer">
         <div class="container">
             <footer>
                 <div class="col-xs-6">
-                    <p>&copy; 2016 identityserver.io</p>
+                    <p>&copy; 2017 identityserver.io</p>
                 </div>
                 <div class="col-xs-6">
                     <ul class="footer-social list-inline">
