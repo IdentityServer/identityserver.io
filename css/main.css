@@ -85,6 +85,9 @@ hr {
   border-radius: 20px;
   background: #45aed6;
 }
+.section-header p {
+  font-size: 15pt;
+}
 .btn {
   border-width: 0;
   border-bottom-width: 3px;
