@@ -1,234 +1,344 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    
     <title>IdentityServer</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
 
-    <meta name="description" content="IdentityServer, the The Open Source OpenID Connect framework for .NET"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="&#64;identityserver"/>
-    <meta name="twitter:title" content="IdentityServer"/>
-    <meta name="twitter:description" content="IdentityServer, the The Open Source OpenID Connect framework for .NET"/>
-    <meta name="twitter:creator" content="&#64;identityserver"/>
-    <meta name="twitter:image" content="https://identityserver.io/images/identityserver-logo.png"/>
-    <meta property="og:title" content="IdentityServer"/>
-    <meta property="og:type" content="product"/>
-    <meta property="og:url" content="https://www.identityserver.io/"/>
-    <meta property="og:image" content="https://www.identityserver.io/images/identityserver-logo.png"/>
-    <meta property="og:description" content="IdentityServer, the The Open Source OpenID Connect and OAuth 2.0 framework for .NET"/>
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
-        crossorigin="anonymous" />
-    <link href="css/Site.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
 </head>
 
-<body>
-    <div class="container-fluid hero" id="hero">
-        <div class="row">
-            <div class="col-lg-12 hero-text">
-                <h1 itemprop="name"><a href="index.html">IdentityServer</a></h1>
-                <h3>Open Source OpenID Connect and OAuth 2.0 framework for .NET</h3>
-            </div>
-        </div>
-    </div>
-    <div class="features" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="feature">
-                        <div class="row vertical-align">
-                            <div class="col-xs-9">
-                                <h3>Authentication as a Service</h3>
-                                <p>Single sign-on (and out) over multiple application types, allowing for centralized login logic and workflow
-                                     for all of your applications (web, native, mobile, services).</p>
-                            </div>
-                            <div class="col-xs-3 icon">
-                                <i class="fa fa-openid fa-5x"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="feature">
-                        <div class="row vertical-align">
-                            <div class="col-xs-9">
-                                <h3>Access Control for APIs</h3>
-                                <p>Issue access tokens for APIs for various types of clients, e.g. server to server, web applications, SPAs and native/mobile apps.</p>
-                            </div>
-                            <div class="col-xs-3 icon">
-                                <i class="fa fa-lock fa-5x"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="feature">
-                        <div class="row vertical-align">
-                            <div class="col-xs-9">
-                                <h3>Federation Gateway</h3>
-                                <p>Support for external identity providers like (Azure) Active Directory, Google, Facebook etc. This shields your applications from the details of how to connect to these external providers.</p>
-                            </div>
-                            <div class="col-xs-3 icon">
-                                <i class="fa fa-sign-in fa-5x"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="feature">
-                        <div class="row vertical-align">
-                            <div class="col-xs-9">
-                                <h3>Focus on Customization</h3>
-                                <p>The most important part - many aspects of IdentityServer can be customized to fit your needs. Since IdentityServer is a framework and not a boxed product or a SaaS, you can write code to adapt the system the way it makes sense for your scenarios.</p>
-                            </div>
-                            <div class="col-xs-3 icon">
-                                <i class="fa fa-gears fa-5x"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="links" id="links">
-        <div class="container">
+<body id="home" class="homepage">
 
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <a title="IdentityServer GitHub" href="https://github.com/IdentityServer" target="_blank">
-                        <div class="link">
-                            <div class="row">
-                                <div class="col-xs-12 icon">
-                                    <i class="fa fa-github fa-5x"></i>
-                                </div>
-                                <div class="col-xs-12">
-                                    <h3>Source Code</h3>
-                                    <p>The full source code for IdentityServer is freely available on GitHub.
-                                        Feel free to browse the source code or even contribute. We accept pull requests!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand">
+                        <!-- <img src="images/IDserver_icon64transparent.png" alt="logo">-->
+                        IdentityServer
+                    </span>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <a title="IdentityServer Documentation" href="https://identityserver4.readthedocs.io/" target="_blank">
-                        <div class="link">
-                            <div class="row">
-                                <div class="col-xs-12 icon">
-                                    <i class="fa fa-book fa-5x"></i>
-                                </div>
-                                <div class="col-xs-12">
-                                    <h3>Documentation</h3>
-                                    <p>Our official documentation contains useful code snippets, and API documentation to help
-                                        you get started. A must read for both beginners and experienced users.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a title="IdentityServer Training" href="training/index.html">
-                        <div class="link">
-                            <div class="row">
-                                <div class="col-xs-12 icon">
-                                    <i class="fa fa-mortar-board fa-5x"></i>
-                                </div>
-                                <div class="col-xs-12">
-                                    <h3>Training</h3>
-                                    <p>We provide both onsite and open enrollment training for OpenID Connect, OAuth2, ASP.NET Security and how to use them all with IdentityServer.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <a title="IdentityServer Consulting" href="mailto:contact@identityserver.io?subject=consulting request">
-                        <div class="link">
-                            <div class="row">
-                                <div class="col-xs-12 icon">
-                                    <i class="fa fa-comments-o fa-5x"></i>
-                                </div>
-                                <div class="col-xs-12">
-                                    <h3>Consulting</h3>
-                                    <p>We offer remote and onsite consulting for identity and access control for modern applications.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a title="IdentityServer North American Support" href="mailto:identityserversupport@solliance.net?subject=production support">
-                        <div class="link">
-                            <div class="row">
-                                <div class="col-xs-12 icon">
-                                    <i class="fa fa-phone fa-5x"></i>
-                                </div>
-                                <div class="col-xs-12">
-                                    <h3>North American Support</h3>
-                                    <p>Commercial support for IdentityServer within North America is now available. 
-                                        To find out more or get in contact, check out our commercial support site.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a title="IdentityServer European Support" href="https://www.identityserver.com/" target="_blank">
-                        <div class="link">
-                            <div class="row">
-                                <div class="col-xs-12 icon">
-                                    <i class="fa fa-phone fa-5x"></i>
-                                </div>
-                                <div class="col-xs-12">
-                                    <h3>European Support</h3>
-                                    <p>Commercial support for IdentityServer within Europe is now available. 
-                                        To find out more or get in contact, check out our commercial support site.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <footer>
-                <div class="col-xs-6">
-                    <p>&copy; 2017 identityserver.io</p>
-                </div>
-                <div class="col-xs-6">
-                    <ul class="footer-social list-inline">
-                        <li>
-                            <a title="Twitter" href="https://twitter.com/identityserver" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li>
-                            <a title="GitHub" href="https://github.com/IdentityServer/IdentityServer4" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-                        </li>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home</a></li>
+                        <li class="scroll"><a href="#consulting">Consulting</a></li>
+                        <li class="scroll"><a href="#training">Training</a></li>
+                        <li class="scroll"><a href="#oss">Open Source</a></li>
+                        <li class="scroll"><a href="#customers">Customers</a></li>
+                        <li class="scroll"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-            </footer>
-        </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script async="async" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
-    <script>
-        $('a[href^="#"]').click(function () {
-            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 200);
-            return false;
-        });</script>
-</body>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
 
+
+    <section id="logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10 text-center">
+                    <p><img src='images/IDserver_logotransparent.png'></p> 
+                    <p class="tagline">The Identity and Access Control solution that works for you</p>
+                    <p>
+                        We help companies using .NET to build identity and access control solutions for modern applications, 
+                        including single sign-on, identity management, authorization, and API security.
+                    </p>
+                    <p>
+                        Based on successful open source projects like IdentityServer,
+                        we provide the flexibility to design solutions to meet your requirements.
+                    </p>
+                    <p>
+                        We'll give you and your team the tools, training, and technology you need to succeed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!--/#logo-->
+
+
+	<section id="consulting" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Consulting</h2>
+                <p class="text-center wow fadeInDown">
+                    We provide a variety of ways to help your team with your projects.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-sm-offset-1 col-sm-5 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <!-- <div class="media service-box">
+                            <div class="pull-left">
+                                <img src="images/icon1.png" alt="img">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Consulting</h4>
+                                <p>Our experts 
+                                    Architecture, guidance, mentoring, POC work, review, remote, onsite.
+                                </p>
+                                <p>for web apps and apis, mobile, javascript/spa</p>
+                            </div>
+                        </div> -->
+
+                        <div class="col-xs-2 icon ">
+                            <i class="fa fa-phone fa-5x"></i>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-9">
+                            <h3>Consulting</h3>
+                            <p>
+                                Our experts 
+                                    Architecture, guidance, mentoring, POC work, review, remote, onsite.
+                            </p>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                  
+                    <div class="col-sm-5 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <!-- <div class="media service-box">
+                            <div class="pull-left">
+                                <img src="images/icon3.png" alt="img">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Support Services</h4>
+                                <p>
+                                    Custom software development, and production support
+                                </p>
+                            </div>
+                        </div> -->
+                        
+                        <div class="col-xs-2 icon ">
+                            <i class="fa fa-support fa-5x"></i>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-9">
+                            <h3>Support Services</h3>
+                            <p>
+                                Custom software development, and production support
+                            </p>
+                        </div>
+
+                    </div><!--/.col-md-4-->
+                
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#consulting-->
+    
+
+    <section id="training">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title text-center wow fadeInDown">Training</h2>
+                    <div class="col-xs-12 icon">
+                            <i class="fa fa-mortar-board fa-5x"></i>
+                        </div>
+                    <p class="text-center wow fadeInDown">
+                            We provide both onsite and open enrollment training for 
+                            OpenID Connect, OAuth2, ASP.NET Security and how to use them
+                            all with IdentityServer.
+                    </p>
+                </div>
+            </div>
+    </section> <!-- #training -->
+
+
+    <section id="oss">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Open Source</h2>
+                <p class="text-center wow fadeInDown">
+                    We use IdentityServer -- the Open Source OpenID Connect and OAuth 2.0 framework for .NET.
+                    <br>
+                    IdentityServer is <a href='https://openid.net/certification/'>OpenID Certified</a> 
+                    and part of the <a href='http://dotnetfoundation.org/'>.NET Foundation</a>.
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                <div class="col-xs-2 icon">
+                    <i class="fa fa-github fa-5x"></i>
+                </div>
+                <div class="col-xs-offset-1 col-xs-9">
+                    <h3>Source Code</h3>
+                    <p>The full source code for IdentityServer is freely available on GitHub.
+                        Feel free to browse the source code or even contribute. We accept pull requests!</p>
+                </div>
+
+            </div><!--/.col-md-4-->
+            
+            <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                <div class="col-xs-2 icon ">
+                    <i class="fa fa-book fa-5x"></i>
+                </div>
+                <div class="col-xs-offset-1 col-xs-9">
+                    <h3>Documentation</h3>
+                    <p>Our official documentation contains useful code snippets, and API documentation to help
+                        you get started. A must read for both beginners and experienced users.</p>
+                </div>
+            </div><!--/.col-md-4-->
+
+            <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                <div class="col-xs-2 icon">
+                    <i class="fa fa-thumbs-up fa-5x"></i>
+                </div>
+                <div class="col-xs-offset-1 col-xs-9">
+                    <h3>Support Open Source</h3>
+                    <p>link to <a href='https://www.patreon.com/identityserver'>patreon</a></p>
+                </div>
+            </div><!--/.col-md-4-->
+
+        </div>
+    </section> <!-- #oss -->
+
+
+    <section id="customers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Customers</h2>
+                <p class="text-center wow fadeInDown">
+                    Below is a short list of some of our customers.
+                </p>
+            </div>
+
+            <div id='customer-list'>
+                <div class='customer-logo'>
+                    <img src='images/customers/apprenda.png' alt='Apprenda'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/bankwest.png' alt='Bankwest'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/daikin.png' alt='Daikin'>
+                </div>
+                
+                <div class='customer-logo'>
+                    <img src='images/customers/datev.png' alt='Datev'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/galeriakaufhof.png' alt='GaleriaKaufhof'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/komplett.png' alt='Komplett'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/microsoft.jpg' alt='Microsoft'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/nordsafety.png' alt='NordSafety'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/norskhelsenett.png' alt='NorskHelsenett'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/relativity.jpg' alt='Relativity'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/simplyhealth.jpg' alt='SimplyHealth'>
+                </div>
+                    
+                <div class='customer-logo'>
+                    <img src='images/customers/sparbankenvest.png' alt='SparbankenVest'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/swisslife.png' alt='SwissLife'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/xero.jpg' alt='Xero'>
+                </div>
+
+                <div class='customer-logo'>
+                    <img src='images/customers/Dyson.png' alt='Dyson'>
+                </div>
+            </div>
+        </div>
+    </section> <!-- #customers -->
+    
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Contact</h2>
+                <p class="text-center wow fadeInDown">
+                    How to get in touch with us
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-2 col-xs-4">
+                    <div class="row">
+                        <div class="col-xs-12 contact-text">Follow us on Twitter</div>
+                        <div class="col-xs-12">
+                            <a href='https://twitter.com/IdentityServer' target="_blank">
+                                <img src='images/twitter.png'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="row">
+                        <div class="col-xs-12 contact-text">Email us to request consulting, training, or support services</div>
+                        <div class="col-xs-12">
+                            <a title="IdentityServer Consulting and Support" href="mailto:contact@identityserver.io?subject=IdentityServer Consulting and Support">
+                                <img src='images/IDserver_icon64transparent.png'>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+    </section> <!-- #contact -->
+    
+
+
+    <footer id="footer">
+        <div class="container text-center">
+          All rights reserved © 2018 IdentityServer
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/scrolling-nav.js"></script>
+<script>
+
+    $("body").data("page", "frontpage");
+
+    </script>
+</body>
 </html>

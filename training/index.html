@@ -1,47 +1,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IdentityServer</title>
-    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="icon" href="../images/favicon.ico">
+    
+    <title>IdentityServer - Training</title>
 
-    <meta name="description" content="IdentityServer, the The Open Source OpenID Connect framework for .NET"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="&#64;identityserver"/>
-    <meta name="twitter:title" content="IdentityServer"/>
-    <meta name="twitter:description" content="IdentityServer, the The Open Source OpenID Connect framework for .NET"/>
-    <meta name="twitter:creator" content="&#64;identityserver"/>
-    <meta name="twitter:image" content="https://identityserver.io/images/identityserver-logo.png"/>
-    <meta property="og:title" content="IdentityServer"/>
-    <meta property="og:type" content="product"/>
-    <meta property="og:url" content="https://www.identityserver.io/"/>
-    <meta property="og:image" content="https://www.identityserver.io/images/identityserver-logo.png"/>
-    <meta property="og:description" content="IdentityServer, the The Open Source OpenID Connect and OAuth 2.0 framework for .NET"/>
-
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
-        crossorigin="anonymous" />
-    <link href="../css/Site.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->       
 </head>
 
-<body>
-    <div class="container-fluid hero" id="hero">
-        <div class="row">
-            <div class="col-lg-12 hero-text">
-                <h1 itemprop="name"><a href="../index.html">IdentityServer</a></h1>
-                <h3>Training</h3>
-            </div>
-        </div>
-    </div>
-    <div class="features" id="features">
+<body class='training-page'>
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand">
+                        <!-- <img src="images/IDserver_icon64transparent.png" alt="logo">-->
+                        IdentityServer
+                    </span>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+
+    <section id="training-logo">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2>Identity and Access Control for Modern Applications and APIs using ASP.NET Core 2</h2>
+                <div class="col-sm-offset-1 col-sm-10 text-center">
+                    <h1>
+                        <img src='../images/IDserver_icontransparent_64.png'>
+                        IdentityServer Training</h1>
+                </div>
+            </div>
+        </div>
+    </section><!--/#logo-->
 
+
+    <section id="training-overview">
+        <div class="container">
+
+            <div class="row">
+                <p class="text-center col-xs-offset-2 col-xs-8 tagline">
+                    Identity and Access Control for Modern Applications 
+                    and APIs using ASP.NET Core
+                </p>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
                     <p>Modern application design has changed quite a bit in recent years. “Mobile-first” and “cloud-ready” are the types of applications you are expected to develop. Also, to keep pace with these demands, Microsoft has revamped their complete web stack with ASP.NET Core to meet these architectural demands.</p>
 
                     <p>Needless to say, you also have to secure these apps.</p>
@@ -53,9 +81,18 @@
                     <p>This workshop can be delivered onsite (<a title="IdentityServer Consulting" href="mailto:contact@identityserver.io?subject=onsite training request">contact us for more info</a>), and publicly as listed below.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <h2>Upcoming Dates</h2>
-            
+
+	<section id="training-dates" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Upcoming Dates</h2>
+                <p>Below are the current open enrollment dates.</p>
+            </div>
+
             <div class="row dates">
                 <div class="col-md-3 col-md-offset-3 date">
                     January, 2018 London
@@ -112,13 +149,18 @@
                     2 days at <a href='https://ndcoslo.com/'>NDC Oslo</a> with Dominick
                 </div>
             </div>
+        </div><!--/.container-->
+    </section><!--/#training-dates-->
+    
 
+    <section id="training-content" >
+        <div class="container">
 
-            <div class="row agenda">
-                <h2>Content</h2>
-                <div class="col-md-6 col-md-push-3">
-                    <p>The full three day version of the class covers the following content and six hands-on labs. You can also customize the content for one or two day versions.</p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Content</h2>
+                <p>The full three day version of the class covers the following content and six hands-on labs. 
+                    <br>
+                    You can also customize the content for one or two day versions.</p>
             </div>
 
             <div class="row agenda">
@@ -178,12 +220,17 @@
                 </div>
             </div>
 
-            <div class="row labs">
-                <h2>Hands-on Labs</h2>
-                <div class="col-md-6 col-md-push-3">
-                    <p>The hands-on labs each take one to two hours and include step-by-step instructions and reference solutions.</p>
-                </div>
-                
+       </div><!--/.container-->
+    </section><!--/#training-content-->
+    
+
+    
+    <section id="training-labs" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Hands-On Labs</h2>
+                <p>The hands-on labs each take one to two hours and include step-by-step instructions and reference solutions.</p>
             </div>
 
             <div class="row labs">
@@ -221,37 +268,29 @@
             </div>
 
         </div>
-    </div>
+    </section><!-- #training-labs -->
 
-    
-
-    <div class="footer">
-        <div class="container">
-            <footer>
-                <div class="col-xs-6">
-                    <p>&copy; 2017 identityserver.io</p>
-                </div>
-                <div class="col-xs-6">
-                    <ul class="footer-social list-inline">
-                        <li>
-                            <a title="Twitter" href="https://twitter.com/identityserver" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-                        </li>
-                        <li>
-                            <a title="GitHub" href="https://github.com/IdentityServer/IdentityServer4" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
+    <footer id="footer">
+        <div class="container text-center">
+          All rights reserved © 2018 IdentityServer
         </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script async="async" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
-    <script>
-        $('a[href^="#"]').click(function () {
-            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 200);
-            return false;
-        });</script>
+    </footer><!--/#footer-->
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- <script src="../js/mousescroll.js"></script>
+    <script src="../js/smoothscroll.js"></script>
+    <script src="../js/jquery.prettyPhoto.js"></script>
+    <script src="../js/jquery.isotope.min.js"></script>
+    <script src="../js/jquery.inview.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+	<script src="../js/scrolling-nav.js"></script> -->
+<script>
+
+    $("body").data("page", "frontpage");
+
+    </script>
 </body>
 
 </html>
