@@ -27,7 +27,7 @@ h6 {
   color: #272727;
 }
 a {
-  color: #45aed6;
+  color: #217494;
   -webkit-transition: color 400ms, background-color 400ms;
   -moz-transition: color 400ms, background-color 400ms;
   -o-transition: color 400ms, background-color 400ms;
@@ -36,7 +36,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #2a95be;
+  color: #17546b;
 }
 hr {
   border-top: 1px solid #e5e5e5;
@@ -83,7 +83,7 @@ hr {
   margin-left: -12px;
   border: 5px solid #fff;
   border-radius: 20px;
-  background: #45aed6;
+  background: #217494;
 }
 .section-header p {
   font-size: 15pt;
@@ -94,12 +94,12 @@ hr {
   border-radius: 3px;
 }
 .btn.btn-primary {
-  background: #45aed6;
-  border-color: #2a95be;
+  background: #217494;
+  border-color: #17546b;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background: #2a95be;
+  background: #17546b;
 }
 .column-title {
   margin-top: 0;
@@ -114,7 +114,7 @@ hr {
   bottom: -1px;
   left: 0;
   width: 40%;
-  border-bottom: 1px solid #45aed6;
+  border-bottom: 1px solid #217494;
 }
 ul.nostyle {
   list-style: none;
@@ -122,7 +122,7 @@ ul.nostyle {
   margin-bottom: 20px;
 }
 ul.nostyle i {
-  color: #45aed6;
+  color: #217494;
 }
 .scaleIn {
   -webkit-animation-name: scaleIn;
@@ -189,7 +189,7 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
     padding-top: 27px;
-    border-top: 3px solid #45aed6;
+    border-top: 3px solid #217494;
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
@@ -219,12 +219,12 @@ ul.nostyle i {
   #main-menu.navbar-default .dropdown-menu > li.active,
   #main-menu.navbar-default .dropdown-menu > li.open,
   #main-menu.navbar-default .dropdown-menu > li:hover {
-    border-left-color: #45aed6;
+    border-left-color: #217494;
   }
   #main-menu.navbar-default .dropdown-menu > li.active > a,
   #main-menu.navbar-default .dropdown-menu > li.open > a,
   #main-menu.navbar-default .dropdown-menu > li:hover > a {
-    color: #45aed6;
+    color: #217494;
     background-color: transparent;
   }
 }
@@ -382,7 +382,7 @@ ul.nostyle i {
   color: #fff;
 }
 #footer a:hover {
-  color: #45aed6;
+  color: #217494;
 }
 #footer ul {
   list-style: none;
