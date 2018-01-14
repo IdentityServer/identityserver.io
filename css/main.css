@@ -26,6 +26,9 @@ h6 {
   font-family: 'Roboto', sans-serif;
   color: #272727;
 }
+.icon a {
+  color: inherit;
+}
 a {
   color: #217494;
   -webkit-transition: color 400ms, background-color 400ms;

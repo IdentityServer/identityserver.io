@@ -30,7 +30,6 @@
                         <span class="icon-bar"></span>
                     </button>
                     <span class="navbar-brand">
-                        <!-- <img src="images/IDserver_icon64transparent.png" alt="logo">-->
                         IdentityServer
                     </span>
                 </div>
@@ -83,21 +82,11 @@
             <div class="row">
                 <div class="features">
                     <div class="col-sm-offset-1 col-sm-5 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <!-- <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="images/icon1.png" alt="img">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Consulting</h4>
-                                <p>Our experts 
-                                    Architecture, guidance, mentoring, POC work, review, remote, onsite.
-                                </p>
-                                <p>for web apps and apis, mobile, javascript/spa</p>
-                            </div>
-                        </div> -->
-
+                      
                         <div class="col-xs-2 icon ">
-                            <i class="fa fa-phone fa-5x"></i>
+                            <a title="IdentityServer Consulting and Support" href="mailto:contact@identityserver.io?subject=IdentityServer Consulting and Support">
+                                <i class="fa fa-phone fa-5x"></i>
+                            </a>    
                         </div>
                         <div class="col-xs-offset-1 col-xs-9">
                             <h3>Consulting</h3>
@@ -110,20 +99,11 @@
 
                   
                     <div class="col-sm-5 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <!-- <div class="media service-box">
-                            <div class="pull-left">
-                                <img src="images/icon3.png" alt="img">
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Support Services</h4>
-                                <p>
-                                    Custom software development, and production support
-                                </p>
-                            </div>
-                        </div> -->
                         
                         <div class="col-xs-2 icon ">
-                            <i class="fa fa-support fa-5x"></i>
+                            <a title="IdentityServer Consulting and Support" href="mailto:contact@identityserver.io?subject=IdentityServer Consulting and Support">
+                                <i class="fa fa-support fa-5x"></i>
+                            </a>
                         </div>
                         <div class="col-xs-offset-1 col-xs-9">
                             <h3>Support Services</h3>
@@ -142,34 +122,48 @@
     
 
     <section id="training">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title text-center wow fadeInDown">Training</h2>
-                    <div class="col-xs-12 icon">
-                            <i class="fa fa-mortar-board fa-5x"></i>
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Training</h2>
+                <p class="text-center wow fadeInDown">
+                    If technologies like OpenID Connect, OAuth 2.0 or ASP.NET Core are new to you or your team, 
+                    <br>we recommend our three-day signature workshop.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-sm-offset-3 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                    
+                        <div class="col-xs-2 icon ">
+                            <a href='training/index.html'>
+                                <i class="fa fa-mortar-board fa-5x"></i>
+                            </a>
                         </div>
-                    <p class="text-center wow fadeInDown">
-                        If technologies like OpenID Connect, OAuth 2.0 or ASP.NET Core are new to you or your team, we recommend
-                        our three-day signature workshop.
-                    </p>
-                    <p>
-                        In this workshop you will learn everything you need to know to design a modern security/identity architecture,
-                        and implement it with tools like IdentityServer.
-                    </p>
+                        <div class="col-xs-offset-1 col-xs-9">
+                            <p>
+                                In this workshop you will learn everything you need to know to design a modern security/identity architecture,
+                                and implement it with tools like IdentityServer.
+                            </p>
 
-                    <p>
-                        The workshop covers the security architecture and APIs of ASP.NET Core, the necessary protocols and technologies like
-                        OpenID Connect, OAuth 2.0 and JSON Web Tokens (JWT), and give you guidance how integrate them into your
-                        web, JavaScript and mobile applications.
-                    </p>
+                            <p>
+                                The workshop covers the security architecture and APIs of ASP.NET Core, the necessary protocols and technologies like
+                                OpenID Connect, OAuth 2.0 and JSON Web Tokens (JWT), and give you guidance how integrate them into your
+                                web, JavaScript and mobile applications.
+                            </p>
 
-                    <p>
-                        The workshop can delivers both on-site or as part of the open enrolments we do around the world.
-                        See <a href="/training/index.html">here</a> for agenda and upcoming dates.
-                    </p>
+                            <p>
+                                The workshop can delivers both on-site or as part of the open enrolments we do around the world.
+                                See <a href="training/index.html">here</a> for agenda and upcoming dates.
+                            </p>
+                        </div>
+                    </div><!--/.col-md-4-->
 
                 </div>
-            </div>
+            </div><!--/.row-->    
+
+        </div> <!-- container -->
     </section> <!-- #training -->
 
 
@@ -180,14 +174,16 @@
                 <p class="text-center wow fadeInDown">
                     We use IdentityServer -- the Open Source OpenID Connect and OAuth 2.0 framework for .NET.
                     <br>
-                    IdentityServer is <a href='https://openid.net/certification/'>OpenID Certified</a> 
-                    and part of the <a href='http://dotnetfoundation.org/'>.NET Foundation</a>.
+                    IdentityServer is <a href='https://openid.net/certification/' target="_blank">OpenID Certified</a> 
+                    and part of the <a href='http://dotnetfoundation.org/' target="_blank">.NET Foundation</a>.
                 </p>
             </div>
 
             <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
                 <div class="col-xs-2 icon">
-                    <i class="fa fa-github fa-5x"></i>
+                    <a href='https://github.com/IdentityServer' target="_blank">
+                        <i class="fa fa-github fa-5x"></i>
+                    </a>
                 </div>
                 <div class="col-xs-offset-1 col-xs-9">
                     <h3>Source Code</h3>
@@ -199,7 +195,9 @@
             
             <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
                 <div class="col-xs-2 icon ">
-                    <i class="fa fa-book fa-5x"></i>
+                    <a href='https://identityserver4.readthedocs.io' target="_blank">
+                        <i class="fa fa-book fa-5x"></i>
+                    </a>
                 </div>
                 <div class="col-xs-offset-1 col-xs-9">
                     <h3>Documentation</h3>
@@ -210,14 +208,17 @@
 
             <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
                 <div class="col-xs-2 icon">
-                    <i class="fa fa-thumbs-up fa-5x"></i>
+                    <a href='https://www.patreon.com/identityserver' target="_blank">
+                        <i class="fa fa-thumbs-up fa-5x"></i>
+                    </a>
                 </div>
                 <div class="col-xs-offset-1 col-xs-9">
                     <h3>Support Open Source</h3>
                     <p>
-                        Open source needs to be sustainable. If you are a company that uses IdentityServer4, please consider 
-                        <a href='https://www.patreon.com/identityserver'>supporting</a> us.
-                        This will allow us dedicating more time to feature work, bug fixes and following up on questions on the issue tracker.
+                        Open source needs to be sustainable. 
+                        If you are a company that uses IdentityServer, please consider 
+                        <a href='https://www.patreon.com/identityserver' target="_blank">supporting</a> it.
+                        This will allow us to dedicate more time to feature work, bug fixes and following up on questions on the issue tracker.
                     </p>
                 </div>
             </div><!--/.col-md-4-->
