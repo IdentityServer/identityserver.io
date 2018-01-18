@@ -26,7 +26,8 @@ h6 {
   font-family: 'Roboto', sans-serif;
   color: #272727;
 }
-.icon a {
+.icon a,
+.link a {
   color: inherit;
 }
 a {
