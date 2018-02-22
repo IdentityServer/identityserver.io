@@ -9,8 +9,8 @@ Author URL: http://shapebootstrap.net
 *******Typography******
 **************************/
 body {
-  padding-top: 100px;
   background: #fff;
+  padding-top: 100px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #64686d;
@@ -246,16 +246,32 @@ ul.nostyle i {
   width: 400px;
   margin-bottom: 40px;
 }
-#consulting {
+#services {
   background-color: #e5e5e5;
 }
-#consulting .container {
+#services .container {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-top: 200px;
 }
-#consulting .icon {
+#services .icon {
   padding: 20px;
+}
+#products {
+  background-color: #e5e5e5;
+}
+#products .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 200px;
+}
+#products .icon {
+  padding: 20px;
+}
+#products .icon img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
 }
 #training .container {
   padding-top: 60px;

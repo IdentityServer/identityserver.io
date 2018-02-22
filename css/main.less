@@ -10,6 +10,7 @@ Author URL: http://shapebootstrap.net
   //background-color: #ffc173;
   //background-color: #cb7305;
   //background-color: #a05900;
+@section-background-color-none:#fff;
 @section-background-color:#ffc173;
 @section-background-color-alt:#e5e5e5;
 
@@ -24,8 +25,10 @@ Author URL: http://shapebootstrap.net
 @text_color: #64686d;
 
 body {
-  padding-top: 100px;
+  //background-color: @section-background-color-alt;
   background: #fff;
+
+  padding-top: 100px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: @text_color;
@@ -293,6 +296,8 @@ ul.nostyle {
 
 //logo
 #logo {
+  //background-color: @section-background-color-alt;
+
   margin-top: 36px;
   font-size: 16pt;
 
@@ -309,8 +314,8 @@ ul.nostyle {
 @media only screen and (min-width : 768px) {
 }
 
-//consulting
-#consulting {
+//services
+#services {
   background-color: @section-background-color-alt;
 
   .container {
@@ -324,8 +329,30 @@ ul.nostyle {
   }
 }
 
+//services
+#products {
+  background-color: @section-background-color-alt;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 200px;
+  }
+
+  .icon{
+    padding: 20px;
+    img{
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
 // training
 #training{
+  //background-color: @section-background-color-alt;
+
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -350,6 +377,8 @@ ul.nostyle {
 
 // customers
 #customers{
+  //background-color: @section-background-color-alt;
+
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
