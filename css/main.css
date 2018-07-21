@@ -344,8 +344,16 @@ ul.nostyle i {
   padding-top: 60px;
 }
 #training-overview .tagline {
+  font-size: 22pt;
   line-height: 120%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#training-overview .tagline2 {
+  font-size: 14pt;
+  font-style: italic;
+  line-height: 120%;
+  margin-bottom: 40px;
 }
 #training-overview .section-header {
   font-size: 24pt;
