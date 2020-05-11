@@ -475,7 +475,11 @@ ul.nostyle i {
     display: inline-block; 
     text-align: left;
 }
-
+@media (max-width: 1200px) {
+    #training-selection ul li span {
+        display: inline;
+    }
+}
 @media (max-width: 990px) {
     .agenda {
         padding-bottom: 60px;
@@ -507,9 +511,6 @@ ul.nostyle i {
     }
     #training-selection ul li + li {
         margin-top: 20px;
-    }
-    #training-selection ul li span {
-        display: inline;
     }
     #training-selection ul li .training-item {
         border-bottom: none;
