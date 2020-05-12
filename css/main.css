@@ -397,6 +397,164 @@ ul.nostyle i {
 #training-labs .agenda {
   text-align: left;
 }
+#training-spacer {
+    height: calc(100% - 86px);
+}
+#training-selection {
+    background-color: #ffc173;
+    padding: 40px 0;
+    margin: 25px 0;
+}
+#training-selection ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 26px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#training-selection ul li a {
+    cursor: pointer;
+    display: flex;
+    max-width: 100%;
+    padding: 20px 40px;
+}
+#training-selection ul li a,
+#training-selection ul li a:hover,
+#training-selection ul li a:active,
+#training-selection ul li a:visited {
+    color: #64686d;
+    text-decoration: none;
+}
+#training-selection ul li span {
+    display: block;
+}
+#training-selection ul li .training-number {
+    align-items: center;
+    background: #64686d;
+    border-radius: 100%;
+    color: #ffc173;
+    display: flex;
+    font-size: 20px;
+    height: 40px;
+    justify-content: center;
+    margin-right: 20px;
+    padding: 10px 16px;
+    margin-top: 5.5px;
+    transition: .2s ease-in-out;
+    width: 40px;
+}
+#training-selection ul li .training-item {
+    border-bottom: 5px solid transparent;
+    padding-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+#training-selection ul li:hover .training-item {
+    border-bottom: 5px solid #64686d;
+    transition: .2s ease-in-out;
+}
+#training-selection ul li .training-item.training-selected {
+    border-bottom: 5px solid #64686d;
+}
+.agenda {
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.agenda > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.agenda ul {
+    display: inline-block; 
+    text-align: left;
+}
+@media (max-width: 1200px) {
+    #training-selection ul li span {
+        display: inline;
+    }
+}
+@media (max-width: 990px) {
+    .agenda {
+        padding-bottom: 60px;
+    }
+    .agenda > div {
+        display: inherit;
+    } 
+    .agenda > div:first-child ul {
+        margin-bottom: 0;
+    }
+    #training-selection {
+        margin: 0;
+    }
+    #training-selection ul {
+        display: inherit;
+        font-size: 18px;
+        line-height: 22px;
+        outline: none;
+        width: 100%;
+    }
+    #training-selection ul li {
+        width: 100%;
+    }
+    #training-selection ul li a {
+        outline: none;
+        align-items: center;
+        padding: 0;
+        text-align: left;
+    }
+    #training-selection ul li + li {
+        margin-top: 20px;
+    }
+    #training-selection ul li .training-item {
+        border-bottom: none;
+        width: 100%;
+        transition: .2s ease-in-out;
+    }
+    #training-selection ul li:hover .training-item,
+    #training-selection ul li .training-item.training-selected {
+        border-bottom: none;
+        transition: .2s ease-in-out;
+    }
+    #training-selection ul li .training-item.training-selected {
+        color: #272727;
+    }
+    #training-selection ul li:hover .training-number {
+        border-bottom: none;
+        background-color: #272727;
+        transition: .2s ease-in-out;
+    }
+    #training-selection ul li .training-number {
+        margin-top: 0;
+    }
+    #training-selection ul li .training-number.training-selected {
+        background-color: #272727;
+    }
+    #training-selection ul li .training-item {
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 350px) {
+    #training-selection ul li .training-number {
+        display: none;
+    }
+    #training-selection ul li a {
+        text-align: center;
+    }
+    #training-selection ul li .training-item.training-selected {
+        color: #272727;
+    }
+    #training-selection ul li:hover .training-item {
+        color: #272727;
+        transition: .2s ease-in-out;
+    }
+}
 /***********************
 ********* Footer ******
 ************************/
